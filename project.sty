@@ -1,0 +1,85 @@
+% PACKAGE
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsfonts,textcomp,latexsym,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{siunitx}
+\usepackage{varioref}           
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue,bookmarksopen=true,bookmarksnumbered=true,pdfpagemode=FullScreen,pdfstartview=FitH}
+\usepackage{cleveref} 
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage[export]{adjustbox}
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{subfigure}
+% GEOMETRY 
+\addtolength{\parskip}{\baselineskip}
+\pagestyle{myheadings}
+\oddsidemargin=1.24mm
+\evensidemargin=-5.4mm
+\topmargin=-23pt
+\headheight=13.59999pt
+\headsep=25pt
+\textheight=674pt
+\textwidth=426pt
+\marginparsep=10pt
+\marginparwidth=50pt
+\marginparpush=5pt
+\voffset=0pt
+\paperheight=845pt
+\footskip=30pt
+\hoffset=0pt
+\paperwidth=597pt
+\brokenpenalty=10000
+% FANCY STYLE
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\nouppercase{\thepage}}]{\fancyplain{}{\nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\nouppercase{\leftmark}}]{\fancyplain{}{\nouppercase{\thepage}}}
+\cfoot{}
+%%%%
+\newcommand{\prefrontmatter}{\thispagestyle{empty}
+   \begin{center}
+        \vspace*{\fill}
+        \huge\projecttitle\\
+        \vspace*{\fill}
+        \Large{\projectauthor}\\
+        \vspace*{\fill}
+        \large{\projectmonth}\\
+        \vspace*{\fill}
+        \large{\projectdepartment}\\
+   \end{center}
+    \clearpage
+   \thispagestyle{empty}
+}
+%% CHAPTER STYLE
+\def\@makechapterhead#1{
+  {\parindent \z@ \raggedright \normalfont
+   \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        \Large\scshape\@chapapp\space\Large\upshape\bf\thechapter
+        \par\nobreak
+        \vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \flushleft\parbox{\textwidth}{\raggedright\huge #1}
+     \par\nobreak
+     \vskip 15pt
+     \hrule height 0.4pt
+  }}
+\def\@makeschapterhead#1{
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+      \huge  #1
+     \par\nobreak
+     \vskip 15pt
+     \hrule height 0.4pt
+  }}
