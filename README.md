@@ -9,6 +9,6 @@ I made this document for my own personal use but if anyone else is interested fe
 
 
 ## Contact
-**Disclaimer: This is a solo effort and I am not a mathematician**. For any corrections or suggestions (which I'm sure there are plenty of), please contact me at aravbhaskaran@gmail.com.
+**Disclaimer: This is a solo effort and I am not a mathematician**. For any corrections or suggestions (which I'm sure there are plenty of), please contact me at the email in the document. 
 
 Thanks for visiting :)
