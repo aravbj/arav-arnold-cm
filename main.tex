@@ -1,0 +1,56 @@
+\documentclass[11pt,openany]{book}
+\usepackage{project}
+\usepackage{esdiff}
+\newcommand{\R}{\mathbb{R}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\def\projectauthor{Arav Bhaskaran Jayaprasad\\ (arav.jayaprasad@iiap.res.in)}
+\def\projecttitle{Solutions to V.A. Arnold's Mathematical Methods of Classical Mechanics}
+\def\projectmonth{\today}
+\def\projectdepartment{Theory Department\\ Indian Institute of Astrophysics, Bangalore}
+% SECTION STYLE
+\setcounter{tocdepth}{2}                            
+\setcounter{secnumdepth}{3}
+\begin{document}
+    \prefrontmatter
+    \frontmatter
+    \pagenumbering{roman}
+    \input{preface}
+    \thispagestyle{empty} 
+    \tableofcontents \thispagestyle{empty} 
+    \mainmatter
+    \part{Newtonian Mechanics}
+    \input{chapter1}
+
+    \input{chapter2}
+
+    \part{Lagrangian Mechanics}
+    \input{chapter3}
+
+    \input{chapter4}
+
+    \input{chapter5}
+
+    \input{chapter6}
+
+    \part{Hamiltonian Mechanics}
+    \input{chapter7}
+
+    \input{chapter8}
+
+    \input{chapter9}
+
+    \input{chapter10}
+
+    \renewcommand{\sectionmark}[1]{\markright{#1}}
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \bibliographystyle{splncs04.bst}
+    \bibliography{refs}
+
+    \appendix
+    \pretocmd{\chapter}{\pagenumbering{arabic}
+	                          \renewcommand*{\thepage}{\thechapter.\arabic{page}}
+                           }{}{} 
+    \include{appendix1}
+\end{document}
