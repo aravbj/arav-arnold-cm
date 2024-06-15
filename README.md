@@ -1,4 +1,4 @@
-# Solutions to Mathematical Methods of Classical Mechanics by V.A.Arnold 
+# Solutions to Mathematical Methods of Classical Mechanics by V.I.Arnold 
 
 ## Status
 **Under Construction**
